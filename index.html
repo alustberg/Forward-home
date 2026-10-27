@@ -330,7 +330,7 @@ section{padding:85px 0}
   document.getElementById('inquiry').addEventListener('submit',function(event){
     event.preventDefault();
     // Supply a verified business email address before enabling the mailto fallback.
-    const confirmedBusinessEmail='';
+    const confirmedBusinessEmail='anne@lustberg.com';
     const status=document.getElementById('form-status');
     if(!confirmedBusinessEmail){status.textContent='Preview only: the contact address has not been connected. No inquiry was sent.';return}
     const name=this.querySelector('#name').value.trim(),email=this.querySelector('#email').value.trim(),interest=this.querySelector('#interest').value,message=this.querySelector('#message').value.trim();
